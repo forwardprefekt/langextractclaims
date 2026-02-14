@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is AWS Systems Manager? - AWS Systems Manager</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="what-is-systems-manager" /><meta name="default_state" content="what-is-systems-manager" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" /><meta name="description" content="Centrally view, manage, and operate nodes at scale in AWS, on-premises, and multicloud environments." /><meta name="deployment_region" content="IAD" /><meta name="product" content="AWS Systems Manager" /><meta name="guide" content="User Guide" /><meta name="abstract" content="AWS Systems Manager (formerly Amazon EC2 Systems Manager) is a unified interface that allows you to centralize operational data and automate tasks across your AWS resources. Systems Manager shortens the time to detect and resolve operational problems in your infrastructure. Systems Manager gives you a complete view of your infrastructure performance and configuration, simplifies resource and application management, and allows you to operate and manage your infrastructure at scale." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="id-id" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="id" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="de-de" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="de" /><link rel="alternative" href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="en-us" /><link rel="alternative" href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="en" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="es-es" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="es" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="fr-fr" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="fr" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="it-it" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="it" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="ja-jp" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="ja" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="ko-kr" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="ko" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="pt-br" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="pt" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_cn/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="zh-cn" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_tw/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="zh-tw" /><link rel="alternative" href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" hreflang="x-default" /><meta name="feedback-item" content="Systems Manager" /><meta name="this_doc_product" content="AWS Systems Manager" /><meta name="this_doc_guide" content="User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'systems-manager'}"></script><meta id="panorama-serviceSubSection" value="User Guide" /><meta id="panorama-serviceConsolePage" value="What is AWS Systems Manager?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is AWS Systems Manager? - AWS Systems Manager</title><meta name="pdf" content="/pdfs/systems-manager/latest/userguide/systems-manager-ug.pdf#what-is-systems-manager" /><meta name="rss" content="aws-systems-manager-user-guide-updates.rss" /><meta name="forums" content="https://repost.aws/tags/TA-UbbRGVYRWCDaCvae6itYg" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Systems%20Manager&amp;topic_url=https://docs.aws.amazon.com/en_us/systems-manager/latest/userguide/what-is-systems-manager.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/systems-manager/latest/userguide/what-is-systems-manager.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/systems-manager/latest/userguide/what-is-systems-manager.html" /><meta name="keywords" content="EC2 Systems Manager,Simple Systems Manager,SSM,Patch Manager,Parameter Store,Maintenance Window,Run Command,State Manager,Session Manager,SSM Agent,SSM Documents,Systems Manager,AWS Resource Groups,AppConfig,OpsCenter,Explorer,Change Calendar,Quick Setup,Change Manager,Fleet Manager" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "AWS Systems Manager",
+        "item" : "https://docs.aws.amazon.com/systems-manager/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "User Guide",
+        "item" : "https://docs.aws.amazon.com/systems-manager/latest/userguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is AWS Systems Manager?",
+        "item" : "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/systems-manager/latest/userguide/systems-manager-ug.pdf#what-is-systems-manager" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/systems-manager/index.html">AWS Systems Manager</a><a href="what-is-systems-manager.html">User Guide</a></div><div id="page-toc-src"><a href="#benefits">How can Systems Manager benefit my operations?</a><a href="#use-cases">Who should use Systems Manager?</a><a href="#features">What are the main features of Systems Manager?</a><a href="#regions">Supported AWS Regions</a><a href="#access-methods">Accessing Systems Manager</a><a href="#service-naming-history">Systems Manager service name history</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><awsui-alert class="awsdocs-page-banner awsui-util-mb-l"><p>• AWS Systems Manager Change Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see
+    <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html">AWS Systems Manager Change Manager availability change</a>.
+      </p><p> </p><p>• The AWS Systems Manager CloudWatch Dashboard will no longer be available after April 30, 2026. Customers can continue to use Amazon CloudWatch console to view, create, and manage their Amazon CloudWatch dashboards, just as they do today. For more information, see
+       <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html">Amazon CloudWatch Dashboard documentation</a>.
+      </p></awsui-alert><h1 class="topictitle" id="what-is-systems-manager">What is AWS Systems Manager?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>AWS Systems Manager helps you centrally view, manage, and operate nodes at scale in AWS,
+        on-premises, and multicloud environments. With the launch of a unified console experience,
+        Systems Manager consolidates various tools to help you complete common node tasks across
+        AWS accounts and AWS Regions.</p><p>To use Systems Manager, nodes must be <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/operating-systems-and-machine-types.html#supported-machine-types">managed</a>, which means SSM Agent is installed on the machine and the agent can
+        communicate with the Systems Manager service. To help you identify why nodes aren't reporting as
+            <em>managed</em>, Systems Manager offers a one-click agent issue diagnosis and
+        remediation runbook that you can configure to run automatically according to a schedule you
+        define. This feature helps identify why nodes can't connect to Systems Manager, including networking
+        misconfigurations. This feature also provides recommended runbooks for remediating
+        networking issues and other problems preventing nodes from being configured as managed
+        nodes.</p><p>The unified console experience also includes a dashboard that provides a high-level
+        overview of your nodes. You can drill down for more specific node insights such as which
+        nodes are running outdated operating system (OS) software. You can also use filters for
+        granular views based on instance metadata like OSs and OS versions, AWS Regions,
+        AWS accounts, and SSM Agent versions. These filters help you retrieve relevant information
+        at a specific account level or application level across your entire organization.</p><div class="highlights"><h6>Topics</h6><ul><li><p><a href="#benefits">How can Systems Manager benefit my operations?</a></p></li><li><p><a href="#use-cases">Who should use Systems Manager?</a></p></li><li><p><a href="#features">What are the main features of Systems Manager?</a></p></li><li><p><a href="#regions">Supported AWS Regions</a></p></li><li><p><a href="#access-methods">Accessing Systems Manager</a></p></li><li><p><a href="#service-naming-history">Systems Manager service name history</a></p></li><li><p><a href="./operating-systems-and-machine-types.html">Supported operating systems and
+                machine types</a></p></li><li><p><a href="./systems-manager-unified-console.html">What is the unified console?</a></p></li></ul></div>
+        <h2 id="benefits">How can Systems Manager benefit my operations?</h2>
+        <p>Benefits of Systems Manager include the following:</p>
+        <div class="itemizedlist">
+             
+             
+             
+            
+        <ul class="itemizedlist"><li class="listitem">
+                <p><b>Enhance visibility across your entire
+                        infrastructure</b></p>
+                <p>Systems Manager provides a centralized view of nodes across your organization's accounts
+                    and Regions. Quickly access instance information such as ID, name, OS details,
+                    and installed agents. Use Amazon Q Developer to query instance metadata using
+                    natural language, helping you identify issues and take action faster.</p>
+            </li><li class="listitem">
+                <p><b>Boost operational efficiency with
+                    automation</b></p>
+                <p>Automate common operational tasks and reduce time and effort required to
+                    maintain your systems. Systems Manager provides safe and secure remote management of your
+                    nodes at scale without logging into your servers. You no longer need to use
+                    bastion hosts, SSH, or remote PowerShell. Systems Manager also provides a simple way of
+                    automating common administrative tasks across groups of nodes such as registry
+                    edits, user management, and software and patch installations. </p>
+            </li><li class="listitem">
+                <p><b>Simplify node management at scale in any
+                        environment</b></p>
+                <p>Systems Manager helps you manage nodes across AWS, on-premises, and multicloud
+                    environments. Schedule automated diagnoses to identify SSM Agent issues and
+                    remediate them with one-click runbooks. After your nodes are configured as
+                        <em>managed</em> nodes, you can execute critical operational
+                    tasks such as applying security patches, initiating logged sessions, and running
+                    commands remotely. </p>
+            </li></ul></div>
+     
+        <h2 id="use-cases">Who should use Systems Manager?</h2>
+        <p>Systems Manager is used by IT operations managers and operators, DevOps engineers, security and
+            compliance managers, and IT directors and CIOs. Broadly speaking, Systems Manager is appropriate
+            for the following:</p>
+        <div class="itemizedlist">
+             
+             
+            
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p>Organizations that want to improve the management and security of their nodes
+                    at scale.</p>
+            </li><li class="listitem">
+                <p>Organizations that want to increase visibility and operational agility when
+                    managing their infrastructure.</p>
+            </li><li class="listitem">
+                <p>Organizations that want to increase operational efficiency at scale.</p>
+            </li></ul></div>
+     
+        <h2 id="features">What are the main features of Systems Manager?</h2>
+        <p>The primary features of Systems Manager are shared between the unified console and the
+            individual tools Systems Manager provides to help you manage nodes at scale.</p>
+        <p><b>Unified console</b></p>
+        <p>The unified console provides a centralized experience to view and manage your nodes.
+            This console leverages several Systems Manager tools and more to provide you with the
+            following:</p>
+        <div class="itemizedlist">
+            
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p>Centralized views of your nodes</p>
+            </li><li class="listitem">
+                <p>Detailed node insights</p>
+            </li><li class="listitem">
+                <p>Automated diagnosis and remediation of common node issues</p>
+            </li></ul></div>
+        <p>For more information about the unified console, see <a href="./systems-manager-unified-console.html">What is the unified console?</a>.</p>
+        <p><b>Tools</b></p>
+        <p>Tools consist of the individual capabilities of Systems Manager and their features such as
+            Run Command, Session Manager, Automation, and Parameter Store. With Systems Manager tools you can do the
+            following:</p>
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p>Just-in-time access node access</p>
+            </li><li class="listitem">
+                <p>Patch nodes at scale</p>
+            </li><li class="listitem">
+                <p>Securely connect to nodes without opening inbound ports</p>
+            </li><li class="listitem">
+                <p>Run commands remotely on nodes</p>
+            </li><li class="listitem">
+                <p>Securely store data referenced by applications</p>
+            </li><li class="listitem">
+                <p>Automate common systems administration tasks</p>
+            </li></ul></div>
+        <p>For more information about Systems Manager tools, see <a href="./systems-manager-tools.html">Using AWS Systems Manager tools</a>.</p>
+     
+        <h2 id="regions">Supported AWS Regions</h2>
+        <p>For a list of AWS Regions that support <a href="./systems-manager-tools.html">Systems Manager
+                tools</a>, see <a href="https://docs.aws.amazon.com/general/latest/gr/ssm.html#ssm_region">Systems Manager service endpoints</a> in the
+        <em>Amazon Web Services General Reference</em>.</p>
+        <p>The unified Systems Manager console, released on November 21, 2024, is available in the
+            following AWS Regions:</p>
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p>US East (N. Virginia) Region</p>
+            </li><li class="listitem">
+                <p>US East (Ohio) Region</p>
+            </li><li class="listitem">
+                <p>US West (N. California) Region</p>
+            </li><li class="listitem">
+                <p>US West (Oregon) Region</p>
+            </li><li class="listitem">
+                <p>Canada (Central) Region</p>
+            </li><li class="listitem">
+                <p>South America (São Paulo) Region</p>
+            </li><li class="listitem">
+                <p>Asia Pacific (Mumbai) Region</p>
+            </li><li class="listitem">
+                <p>Asia Pacific (Tokyo) Region</p>
+            </li><li class="listitem">
+                <p>Asia Pacific (Seoul) Region</p>
+            </li><li class="listitem">
+                <p>Asia Pacific (Singapore) Region</p>
+            </li><li class="listitem">
+                <p>Asia Pacific (Sydney) Region</p>
+            </li><li class="listitem">
+                <p>Europe (Frankfurt) Region</p>
+            </li><li class="listitem">
+                <p>Europe (Stockholm) Region</p>
+            </li><li class="listitem">
+                <p>Europe (Ireland) Region</p>
+            </li><li class="listitem">
+                <p>Europe (London) Region</p>
+            </li><li class="listitem">
+                <p>Europe (Paris) Region</p>
+            </li></ul></div>
+     
+        <h2 id="access-methods">Accessing Systems Manager</h2>
+        <p>You can work with Systems Manager in any of the following ways:</p>
+        <div class="variablelist">
+             
+             
+             
+             
+        <dl>
+                <dt><b><span class="term">Systems Manager console</span></b></dt>
+                <dd>
+                    <p>The <a href="https://console.aws.amazon.com/systems-manager/" rel="noopener noreferrer" target="_blank"><span>Systems Manager console</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> is a
+                        browser-based interface to access and use Systems Manager.</p>
+                </dd>
+            
+                <dt><b><span class="term">AWS IoT Greengrass V2 console</span></b></dt>
+                <dd>
+                    <p>You can view and manage edge devices that are configured for AWS IoT Greengrass in
+                        the <a href="https://console.aws.amazon.com/iot" rel="noopener noreferrer" target="_blank"><span>Greengrass console</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+                </dd>
+            
+                <dt><b><span class="term">AWS command line tools</span></b></dt>
+                <dd>
+                    <p>By using the AWS command line tools, you can issue commands at your
+                        system's command line to perform Systems Manager and other AWS tasks. The tools are
+                        supported on Linux, macOS, and Windows. Using the AWS Command Line Interface
+                        (AWS CLI) can be faster and more convenient than using the console. The
+                        command line tools also are useful if you want to build scripts that perform
+                        AWS tasks. </p>
+                    <p>AWS provides two sets of command line tools: the <a href="https://aws.amazon.com/cli/" rel="noopener noreferrer" target="_blank"><span>AWS Command Line Interface</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> and the <a href="https://aws.amazon.com/powershell/" rel="noopener noreferrer" target="_blank"><span>AWS Tools for Windows PowerShell</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. For information about installing
+                        and using the AWS CLI, see the <a href="https://docs.aws.amazon.com/cli/latest/userguide/">AWS Command Line Interface User Guide</a>. For information
+                        about installing and using the Tools for Windows PowerShell, see the <a href="https://docs.aws.amazon.com/powershell/latest/userguide/">AWS Tools for PowerShell User Guide</a>.</p>
+                    <div class="awsdocs-note"><div class="awsdocs-note-title"><awsui-icon name="status-info" variant="link"></awsui-icon><h6>Note</h6></div><div class="awsdocs-note-text"><p>On your Windows Server instances, Windows PowerShell 3.0 or
+                            later is required to run certain SSM documents (for example, the
+                            legacy <code class="code">AWS-ApplyPatchBaseline</code> document). Verify that your
+                            Windows Server instances are running Windows Management Framework
+                                3.0 or later. The framework includes Windows
+                                PowerShell.</p></div></div>
+                </dd>
+            
+                <dt><b><span class="term">AWS SDKs</span></b></dt>
+                <dd>
+                    <p>AWS provides software development kits (SDKs) that consist of libraries
+                        and sample code for various programming languages and platforms (for
+                        example, <a href="https://aws.amazon.com/sdk-for-java/" rel="noopener noreferrer" target="_blank"><span>Java</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>, <a href="https://aws.amazon.com/sdk-for-python/" rel="noopener noreferrer" target="_blank"><span>Python</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>, <a href="https://aws.amazon.com/sdk-for-ruby/" rel="noopener noreferrer" target="_blank"><span>Ruby</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>, <a href="https://aws.amazon.com/sdk-for-net/" rel="noopener noreferrer" target="_blank"><span>.NET</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>, <a href="https://aws.amazon.com/mobile/resources/" rel="noopener noreferrer" target="_blank"><span>iOS and Android</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>, and
+                            <a href="https://aws.amazon.com/tools/#sdk" rel="noopener noreferrer" target="_blank"><span>others</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>). The SDKs
+                        provide a convenient way to grant programmatic access to Systems Manager. For
+                        information about the AWS SDKs, including how to download and install
+                        them, see <a href="https://aws.amazon.com/tools/#sdk" rel="noopener noreferrer" target="_blank"><span>Tools for Amazon Web
+                            Services</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+                </dd>
+            </dl></div>
+     
+        <h2 id="service-naming-history">Systems Manager service name history</h2>
+        <p>AWS Systems Manager (Systems Manager) was formerly known as "Amazon Simple Systems Manager
+                (SSM)" and "Amazon EC2 Systems Manager (SSM)". The
+            original abbreviated name of the service, "SSM", is still reflected in
+            various AWS resources, including a few other service consoles. Some examples:</p>
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p><b>Systems Manager Agent</b>: SSM Agent</p>
+            </li><li class="listitem">
+                <p><b>Systems Manager parameters</b>: SSM parameters</p>
+            </li><li class="listitem">
+                <p><b>Systems Manager service endpoints</b>:
+                            <code class="code">ssm.<code class="replaceable">region</code>.amazonaws.com</code></p>
+            </li><li class="listitem">
+                <p><b>AWS CloudFormation resource types</b>:
+                        <code class="code">AWS::SSM::Document</code></p>
+            </li><li class="listitem">
+                <p><b>AWS Config rule identifier</b>:
+                        <code class="code">EC2_INSTANCE_MANAGED_BY_SSM</code></p>
+            </li><li class="listitem">
+                <p><b>AWS Command Line Interface (AWS CLI) commands</b>: <code class="code">aws ssm
+                        describe-patch-baselines</code></p>
+            </li><li class="listitem">
+                <p><b>AWS Identity and Access Management (IAM) managed policy names</b>:
+                        <code class="code">AmazonSSMReadOnlyAccess</code></p>
+            </li><li class="listitem">
+                <p><b>Systems Manager resource ARNs</b>:
+                            <code class="code">arn:aws:ssm:<code class="replaceable">region</code>:<code class="replaceable">account-id</code>:patchbaseline/pb-07d8884178EXAMPLE</code></p>
+            </li></ul></div>
+    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./operating-systems-and-machine-types.html">Supported operating systems and
+                machine types</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Systems Manager&amp;topic_url=https://docs.aws.amazon.com/en_us/systems-manager/latest/userguide/what-is-systems-manager.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Systems Manager&amp;topic_url=https://docs.aws.amazon.com/en_us/systems-manager/latest/userguide/what-is-systems-manager.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

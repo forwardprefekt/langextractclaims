@@ -1,0 +1,40 @@
+[project]
+name = "mitre-langextract-mini"
+version = "0.1.0"
+description = "Tiny MITRE ATT&CK random-reference fetch + LangExtract runner"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "langextract[openai]>=1.1.1,<2",
+    "trafilatura>=1.12.2",
+    "waybackpy>=3.0.6",
+    "pypdf>=4.0.0",
+]
+
+[project.scripts]
+mitre-langextract-mini = "mitre_langextract_mini.workflow:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+eval = [
+    "pytrec_eval>=0.5",
+    "scikit-learn>=1.5.0",
+]
+notebook = [
+    "networkx>=3.4.2",
+    "plotly>=5.0.0",
+    "nbformat>=5.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
