@@ -42,19 +42,29 @@ Claim object uses `assessment` (not `validation`):
 
 ## Install
 
+From the `mitre-langextract-mini` repo root (standalone):
+
 ```bash
-uv tool install --from ./packages/mitre-langextract-mini mitre-langextract-mini --force
+uv tool install --from . mitre-langextract-mini --force
 ```
 
 Notebook extras:
 
 ```bash
-uv sync --directory packages/mitre-langextract-mini --extra notebook
+uv sync --extra notebook
 ```
 
 Evaluation extras:
 
 ```bash
+uv sync --extra eval
+```
+
+From a monorepo root where this package lives at `packages/mitre-langextract-mini`:
+
+```bash
+uv tool install --from ./packages/mitre-langextract-mini mitre-langextract-mini --force
+uv sync --directory packages/mitre-langextract-mini --extra notebook
 uv sync --directory packages/mitre-langextract-mini --extra eval
 ```
 
@@ -86,15 +96,15 @@ mitre-langextract-mini extract --reference-url "https://example.com/report" | jq
 
 ```bash
 mitre-langextract-mini evaluate \
-  --pred packages/mitre-langextract-mini/data/eval_gold/v1 \
-  --gold packages/mitre-langextract-mini/data/eval_gold/v1 \
+  --pred data/eval_gold/v1 \
+  --gold data/eval_gold/v1 \
   --format json
 ```
 
 ```bash
 mitre-langextract-mini evaluate \
-  --pred packages/mitre-langextract-mini/data/eval_gold/v1 \
-  --gold packages/mitre-langextract-mini/data/eval_gold/v1 \
+  --pred data/eval_gold/v1 \
+  --gold data/eval_gold/v1 \
   --format markdown
 ```
 
@@ -119,12 +129,18 @@ The evaluator expects V2 schema (`claim_assessments` + `claim_associations`).
 ## Tests (Full Output)
 
 ```bash
+PYTHONPATH=src .venv/bin/python -m pytest -vv -s tests
+```
+
+Monorepo variant:
+
+```bash
 PYTHONPATH=packages/mitre-langextract-mini/src .venv/bin/python -m pytest -vv -s packages/mitre-langextract-mini/tests
 ```
 
 ## Curated Gold
 
 In-repo gold set:
-- `packages/mitre-langextract-mini/data/eval_gold/v1/claims.jsonl`
-- `packages/mitre-langextract-mini/data/eval_gold/v1/associations.jsonl`
-- `packages/mitre-langextract-mini/data/eval_gold/v1/mitre_links.jsonl`
+- `data/eval_gold/v1/claims.jsonl`
+- `data/eval_gold/v1/associations.jsonl`
+- `data/eval_gold/v1/mitre_links.jsonl`
